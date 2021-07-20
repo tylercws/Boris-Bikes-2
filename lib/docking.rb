@@ -4,8 +4,9 @@ class Bike
   end
 
   def release_bike 
-
+    Bike.new
   end
+
   def working?
 
   end
