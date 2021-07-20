@@ -1,5 +1,13 @@
 require 'docking'
 describe Bike do
+    it 'does not release the bike if none available' do
+    bike = Bike.new
+    bike.release_bike
+    expect(bike.release_bike).to eq("There are no bikes!")
+    end
+end
+
+describe Bike do
     it 'releases the bike' do
 
     bike = Bike.new
@@ -23,3 +31,4 @@ describe Bike do
         expect(bike.docked).to eq (true)
     end
 end
+
