@@ -8,3 +8,18 @@ describe Bike do
     expect(subject).to respond_to :release_bike
     end
 end
+
+describe Bike do
+    it 'member of public returns bike' do
+        bike = Bike.new
+        bike.return_bike
+    end
+end
+
+
+describe Bike do
+    it 'member of public views a docked bike' do
+        bike = Bike.new
+        expect(bike.docked).to eq (true)
+    end
+end
